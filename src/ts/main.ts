@@ -1,2 +1,2 @@
 // Import custom CSS
-import "../scss/styles.scss";
+import "../sass/main.scss";
