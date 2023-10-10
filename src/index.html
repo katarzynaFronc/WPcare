@@ -3,16 +3,30 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Vite</title>
+    <title>WPcare</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./sass/main.css" />
   </head>
   <body>
-    <div>
-      <h1>WPcare</h1>
-    </div>
-    <script type="module" src="./ts/main.js"></script>
+    <header class="header">
+      <a href="#" class="navigation__a">
+        <h1 class="header__h2">WPcare</h1>
+      </a>
+      <nav class="navigation">
+        <a href="" class="navigation__a">O nas</a>
+        <a href="" class="navigation__a">FAQ</a>
+        <a href="" class="navigation__a">Cennik</a>
+        <a href="" class="navigation__a">Blog</a>
+        <a href="" class="navigation__a">Kontakt</a>
+        <select class="navigation__select">
+          <option value="pl">PL</option>
+          <option value="en">EN</option>
+        </select>
+        <button class="navigation__button--light">Dowiedz się więcej</button>
+      </nav>
+    </header>
+    <script type="text/x-scss" src="./ts/main.js"></script>
   </body>
 </html>

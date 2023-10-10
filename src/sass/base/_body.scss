@@ -1,0 +1,11 @@
+@import "./../utilities/variables";
+
+body {
+  background: $base-color;
+  color: $primary-color;
+  font-family: $main-font;
+  font-size: 20px;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+}

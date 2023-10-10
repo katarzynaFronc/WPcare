@@ -1,0 +1,14 @@
+@import "./../utilities/variables";
+
+.navigation__button--light {
+  height: 3.25rem;
+  width: 14rem;
+  border: 1px solid $secondary-color;
+  border-radius: 2.5rem;
+  color: $secondary-color;
+  font-size: 1.1rem;
+  font-family: $main-font;
+  background-color: $base-color;
+
+  cursor: pointer;
+}
