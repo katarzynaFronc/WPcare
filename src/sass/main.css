@@ -20,6 +20,43 @@ body {
   cursor: pointer;
 }
 
+.main__container-button {
+  height: 3.25rem;
+  width: 13.6rem;
+  border: none;
+  border-radius: 2.5rem;
+  color: #fff;
+  font-size: 1.1rem;
+  font-family: "Lato", sans-serif;
+  background-color: #3174ff;
+}
+
+.main__container-numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.main__container-numbers-card {
+  background-color: #f6f7fe;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.main__container-numbers-card span {
+  display: block;
+  color: #3174ff;
+  font-size: 4rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.main__container-numbers-card p {
+  color: rgba(50, 55, 60, 0.5176470588);
+  text-align: center;
+  font-size: 1.1rem;
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -37,7 +74,7 @@ body {
   color: #23282d;
 }
 
-.header__h2 {
+.header__h1 {
   font-size: 2rem;
   line-height: 2.4rem;
   margin: 0;
@@ -74,4 +111,53 @@ body {
 .header__nav-lang:focus {
   outline: none;
   box-shadow: none;
+}
+
+.main__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 85%;
+  margin: auto;
+  margin-bottom: 5rem;
+  gap: 8rem;
+}
+
+.main__container-content-h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 3.2rem;
+  line-height: 4.35rem;
+}
+
+.main__container-content-p {
+  font-family: "Lato", sans-serif;
+  line-height: 2rem;
+  padding-bottom: 2rem;
+}
+
+.main__container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.main__offer {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__offer-h4 {
+  color: #3174ff;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  text-align: center;
+  margin: 0;
+}
+
+.main__offer-img {
+  width: 100%;
+  height: 2rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */

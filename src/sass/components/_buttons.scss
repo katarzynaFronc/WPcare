@@ -12,3 +12,14 @@
 
   cursor: pointer;
 }
+
+.main__container-button {
+  height: 3.25rem;
+  width: 13.6rem;
+  border: none;
+  border-radius: 2.5rem;
+  color: $base-color;
+  font-size: 1.1rem;
+  font-family: $main-font;
+  background-color: $secondary-color;
+}
