@@ -3,26 +3,25 @@
 .main__container-numbers {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
   gap: 2rem;
-}
 
-.main__container-numbers-card {
-  background-color: $card-color;
-  border: none;
-  border-radius: 0.5rem;
-}
+  &-card {
+    background-color: $card-color;
+    border: none;
+    border-radius: 0.5rem;
+  }
 
-.main__container-numbers-card span {
-  display: block;
-  color: $secondary-color;
-  font-size: 4rem;
-  font-weight: 900;
-  text-align: center;
-}
+  &-card span {
+    display: block;
+    color: $secondary-color;
+    font-size: 4rem;
+    font-weight: 900;
+    text-align: center;
+  }
 
-.main__container-numbers-card p {
-  color: $card-p;
-  text-align: center;
-  font-size: 1.1rem;
+  &-card p {
+    color: $card-p;
+    text-align: center;
+    font-size: 1.1rem;
+  }
 }

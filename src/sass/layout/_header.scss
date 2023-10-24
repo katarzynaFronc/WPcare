@@ -9,46 +9,46 @@
   height: 7.2rem;
   width: 90vw;
   margin: auto;
-}
 
-.header__brand {
-  padding-right: 2rem;
-  text-decoration: none;
-  color: $primary-color;
-}
-.header__h1 {
-  font-size: 2rem;
-  line-height: 2.4rem;
-  margin: 0;
-}
+  &__brand {
+    padding-right: 2rem;
+    text-decoration: none;
+    color: $primary-color;
+  }
+  &__h1 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    margin: 0;
+  }
 
-.header__nav-list {
-  display: inline-block;
-  list-style: none;
-}
+  .header__nav-list {
+    display: inline-block;
+    list-style: none;
 
-.header__nav-list li {
-  display: inline;
-}
+    & li {
+      display: inline;
+    }
 
-.header__nav-list-item-link {
-  text-decoration: none;
-  color: $primary-color;
-  padding-right: 2rem;
-}
+    &-item-link {
+      text-decoration: none;
+      color: $primary-color;
+      padding-right: 2rem;
+    }
+  }
 
-.header__nav-lang {
-  margin-right: 2rem;
-  padding-right: 1rem;
-  border: none;
-  font-family: $main-font;
-  font-size: 1.1rem;
-  appearance: none;
-  background: url("/src/public/Polygon\ 1.png") no-repeat right;
-}
+  .header__nav-lang {
+    margin-right: 2rem;
+    padding-right: 1rem;
+    border: none;
+    font-family: $main-font;
+    font-size: 1.1rem;
+    appearance: none;
+    background: url("/src/public/Polygon\ 1.png") no-repeat right;
 
-.header__nav-lang:active,
-.header__nav-lang:focus {
-  outline: none;
-  box-shadow: none;
+    &:active,
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
 }

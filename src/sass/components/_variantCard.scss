@@ -6,72 +6,72 @@
   margin: auto;
   margin-top: 30rem;
   margin-bottom: 5rem;
-}
 
-.section__variants-h3 {
-  font-size: 3.2rem;
-  font-weight: 900;
-  margin: auto;
-  line-height: 4rem;
-  padding-bottom: 2rem;
-}
+  &-h3 {
+    font-size: 3.2rem;
+    font-weight: 900;
+    margin: auto;
+    line-height: 4rem;
+    padding-bottom: 2rem;
+  }
 
-.section__variants-p {
-  line-height: 2.2rem;
-  width: 40%;
-  text-align: center;
-  margin: auto;
-  padding-bottom: 1rem;
-}
+  &-p {
+    line-height: 2.2rem;
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 1rem;
+  }
 
-.section__variants-container {
-  display: flex;
-  align-items: baseline;
-  padding: 1rem 0;
-  margin: auto;
-  border-radius: 0.5rem;
-  box-shadow: 0px 0px 25px 0px #00092770;
-}
+  &-container {
+    display: flex;
+    align-items: baseline;
+    padding: 1rem 0;
+    margin: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 25px 0px #00092770;
+  }
 
-.section__variants-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  &-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-.section__variants-name {
-  font-size: 2.4rem;
-  font-family: $title-font;
-  font-weight: 700;
-  padding: 1rem 2rem;
-  margin: 0;
-}
+  &-name {
+    font-size: 2.4rem;
+    font-family: $title-font;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    margin: 0;
+  }
 
-.section__variants-line {
-  width: 100%;
-  border-top: 1px solid $line-color;
-}
+  &-line {
+    width: 100%;
+    border-top: 1px solid $line-color;
+  }
 
-.section__variants-cost {
-  display: flex;
-  margin-top: 2rem;
-  gap: 0.5rem;
-}
+  &-cost {
+    display: flex;
+    margin-top: 2rem;
+    gap: 0.5rem;
+  }
 
-.section__variants-price {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: $secondary-color;
-}
+  &-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $secondary-color;
+  }
 
-.section__variants-period {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin: 0;
-}
+  &-period {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+  }
 
-.section__variants-card-p {
-  margin: 0;
-  line-height: 2.8rem;
+  &-card-p {
+    margin: 0;
+    line-height: 2.8rem;
+  }
 }
