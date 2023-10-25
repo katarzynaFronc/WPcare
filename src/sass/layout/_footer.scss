@@ -6,30 +6,36 @@
   &__separator {
     border: 0.2rem solid $base-color;
   }
-}
 
-.footer__contact {
-  display: flex;
-  justify-content: space-around;
-
-  &-p {
-    font-size: 1.1rem;
+  &__section {
+    display: flex;
+    justify-content: space-around;
   }
 
-  &-email {
-    color: $email-color;
-    font-size: 1.1rem;
+  &__contact {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+
+    &-p {
+      font-size: 1.1rem;
+    }
+
+    &-email {
+      color: $email-color;
+      font-size: 1.1rem;
+    }
   }
-}
 
-.footer__link {
-  color: $secondary-color;
-  font-size: 1.5rem;
-  text-align: center;
-}
+  &__link {
+    color: $secondary-color;
+    font-size: 1.5rem;
+    text-align: center;
+  }
 
-.footer__copyright {
-  width: 85%;
-  margin: auto;
-  line-height: 4rem;
+  &__copyright {
+    width: 85%;
+    margin: auto;
+    line-height: 4rem;
+  }
 }

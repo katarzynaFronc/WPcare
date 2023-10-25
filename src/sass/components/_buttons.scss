@@ -1,41 +1,24 @@
 @import "./../utilities/variables";
+@import "./../utilities/mixins";
 
 .header__nav-button {
-  height: 3.25rem;
+  @include secondaryBtn;
   width: 14rem;
-  border: 1px solid $secondary-color;
-  border-radius: 2.5rem;
-  color: $secondary-color;
-  font-size: 1.1rem;
-  font-family: $main-font;
-  background-color: $base-color;
-
-  cursor: pointer;
 }
 
 .main__container-button {
-  height: 3.25rem;
+  @include primaryBtn;
   width: 13.6rem;
-  border: none;
-  border-radius: 2.5rem;
-  color: $base-color;
-  font-size: 1.1rem;
-  font-family: $main-font;
-  background-color: $secondary-color;
-
-  cursor: pointer;
 }
 
 .section__variants-button {
-  height: 3.25rem;
+  @include primaryBtn;
   width: 10rem;
-  border: none;
-  border-radius: 2.5rem;
-  color: $base-color;
-  font-size: 1.1rem;
-  font-family: $main-font;
-  background-color: $secondary-color;
   margin: 2rem 0;
+}
 
-  cursor: pointer;
+.main__container-form-button {
+  @include primaryBtn;
+  width: 13rem;
+  border-radius: 0 1.625rem 0 1.625rem;
 }

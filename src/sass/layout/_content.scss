@@ -20,10 +20,36 @@
     padding-bottom: 2rem;
   }
 
+  &-content-p2 {
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+  }
+
   & img {
     width: 100%;
     height: 100%;
     object-fit: contain;
+  }
+
+  &-form {
+    display: flex;
+    justify-content: space-between;
+    width: 37.8rem;
+    border: 2px solid $line-color;
+    border-radius: 2.5rem 2.5rem 0 2.5rem;
+
+    &-input {
+      flex-grow: 1;
+      border: none;
+      border-radius: 2.5rem;
+      padding-left: 2rem;
+      font-size: 1.1rem;
+
+      &:focus {
+        outline: none;
+        border: none;
+      }
+    }
   }
 }
 
