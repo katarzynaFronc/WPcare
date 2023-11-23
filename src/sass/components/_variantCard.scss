@@ -25,11 +25,16 @@
 
   &-container {
     display: flex;
-    align-items: baseline;
-    padding: 1rem 0;
-    margin: auto;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 1.2rem 0 $shadow-color;
+    flex-direction: column;
+
+    @include respond-to("medium") {
+      flex-direction: row;
+      align-items: baseline;
+      padding: 1rem 0;
+      margin: auto;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 1.2rem 0 $shadow-color;
+    }
   }
 
   &-card {

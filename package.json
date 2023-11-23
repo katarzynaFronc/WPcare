@@ -16,6 +16,7 @@
     "vite": "^4.4.9"
   },
   "dependencies": {
-    "@popperjs/core": "^2.11.8"
+    "@popperjs/core": "^2.11.8",
+    "reset-css": "^5.0.2"
   }
 }

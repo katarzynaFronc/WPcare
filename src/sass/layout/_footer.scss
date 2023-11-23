@@ -9,13 +9,23 @@
 
   &__section {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+
+    @include respond-to("medium") {
+      flex-direction: row;
+    }
   }
 
   &__contact {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     gap: 3rem;
+
+    @include respond-to("medium") {
+      flex-direction: row;
+    }
 
     &-p {
       font-size: 1.1rem;

@@ -11,7 +11,6 @@
   margin: auto;
 
   &__brand {
-    padding-right: 2rem;
     text-decoration: none;
     color: $primary-color;
   }
@@ -21,18 +20,59 @@
     margin: 0;
   }
 
-  .header__nav-list {
-    display: inline-block;
-    list-style: none;
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: $card-color;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    height: 100%;
+    min-width: 50%;
 
-    & li {
-      display: inline;
+    transform: translateX(100%);
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+
+    @include respond-to("medium") {
+      background-color: $base-color;
+      display: inline-flex;
+      flex-direction: row;
+      align-items: center;
+      transform: none;
+      position: relative;
+      opacity: 1;
     }
 
-    &-item-link {
-      text-decoration: none;
-      color: $primary-color;
-      padding-right: 2rem;
+    &-visible {
+      z-index: 8000;
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .header__nav-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+    line-height: 1.8rem;
+
+    @include respond-to("medium") {
+      flex-direction: row;
+      align-items: center;
+      list-style: none;
+      margin-top: 0;
+    }
+
+    &-item {
+      display: inline;
+      width: max-content;
+
+      &-link {
+        text-decoration: none;
+        color: $primary-color;
+        padding-right: 2rem;
+      }
     }
   }
 
@@ -40,10 +80,11 @@
     margin-right: 2rem;
     padding-right: 1rem;
     border: none;
+    width: max-content;
     font-family: $main-font;
     font-size: 1.1rem;
     appearance: none;
-    background: url("/src/public/Polygon\ 1.png") no-repeat right;
+    background: url("/src/public/Polygon_1.png") no-repeat right;
 
     &:active,
     &:focus {
