@@ -6,18 +6,27 @@
   align-items: center;
   justify-content: space-between;
   color: $primary-color;
-  height: 7.2rem;
-  width: 90vw;
-  margin: auto;
+  height: 2.5em;
+  width: 100vw;
 
+  @include respond-to("medium") {
+    height: 7.2rem;
+    width: 90vw;
+    margin: auto;
+  }
   &__brand {
     text-decoration: none;
     color: $primary-color;
   }
+
   &__h1 {
-    font-size: 2rem;
-    line-height: 2.4rem;
-    margin: 0;
+    font-size: 1.2rem;
+    margin: 0.9rem 0 0.15rem 1rem;
+
+    @include respond-to("medium") {
+      font-size: 2rem;
+      margin-top: 0;
+    }
   }
 
   &__nav {

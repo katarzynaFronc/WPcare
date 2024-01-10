@@ -1,3 +1,15 @@
+// ----- burger menu -----
+
+document.querySelector(".header__nav-button-menu")?.addEventListener("click", () => {
+  const nav: HTMLElement | null = document.querySelector("#HeaderNav");
+  const btn: HTMLElement | null = document.querySelector(".header__nav-button-menu");
+
+  if (nav && btn) {
+    nav.classList.toggle("header__nav-visible");
+    btn.classList.toggle("clicked");
+  }
+});
+
 // ----- variants -----
 
 export interface variantProps {
@@ -74,8 +86,9 @@ export const variants = [
 ];
 
 const variantsContainer = document.getElementById("variantsContainer");
+
 if (variantsContainer) {
-  variants.forEach((variant) => {
+  variants.forEach((variant, index) => {
     const newElement = document.createElement("div");
     const imgElement = document.createElement("img");
     const nameElement = document.createElement("h4");
@@ -104,6 +117,7 @@ if (variantsContainer) {
     buttonElement.textContent = "Zobacz więcej";
 
     newElement.classList.add("section__variants-card");
+    imgElement.classList.add("section__variants-img");
     nameElement.classList.add("section__variants-name");
     lineElement.classList.add("section__variants-line");
     costElement.classList.add("section__variants-cost");
@@ -116,20 +130,45 @@ if (variantsContainer) {
     supportElement.classList.add("section__variants-card-p");
     buttonElement.classList.add("section__variants-button");
 
-    newElement.appendChild(imgElement);
-    newElement.appendChild(nameElement);
-    newElement.appendChild(lineElement);
-    newElement.appendChild(costElement);
-    costElement.appendChild(priceElement);
-    costElement.appendChild(periodElement);
-    newElement.appendChild(spaceElement);
-    newElement.appendChild(domainElement);
-    newElement.appendChild(discElement);
-    newElement.appendChild(offersElement);
-    newElement.appendChild(supportElement);
-    newElement.appendChild(buttonElement);
-    variantsContainer.appendChild(newElement);
+    if (window.innerWidth <= 960 && index !== variants.length - 1) {
+      newElement.appendChild(imgElement);
+      newElement.appendChild(nameElement);
+      newElement.appendChild(buttonElement);
+      newElement.appendChild(lineElement);
+      variantsContainer.appendChild(newElement);
+    } else if (window.innerWidth <= 960) {
+      newElement.appendChild(imgElement);
+      newElement.appendChild(nameElement);
+      newElement.appendChild(buttonElement);
+      variantsContainer.appendChild(newElement);
+    } else {
+      newElement.appendChild(imgElement);
+      newElement.appendChild(nameElement);
+      newElement.appendChild(lineElement);
+      newElement.appendChild(costElement);
+      costElement.appendChild(priceElement);
+      costElement.appendChild(periodElement);
+      newElement.appendChild(spaceElement);
+      newElement.appendChild(domainElement);
+      newElement.appendChild(discElement);
+      newElement.appendChild(offersElement);
+      newElement.appendChild(supportElement);
+      newElement.appendChild(buttonElement);
+      variantsContainer.appendChild(newElement);
+    }
   });
 } else {
   console.error("variantsContainer is null");
 }
+
+// ----- slider -----
+
+const slider: HTMLInputElement | null = document.querySelector("#slider");
+const clientsContainer: HTMLElement | null = document.querySelector(".section__clients-container");
+
+slider?.addEventListener("input", (event: Event) => {
+  const target = event.target as HTMLInputElement;
+  const scrollAmount = Number(target.value);
+
+  (clientsContainer as HTMLElement).scrollLeft = scrollAmount;
+});

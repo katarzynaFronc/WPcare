@@ -1,29 +1,43 @@
 @import "./../utilities/variables";
 
 .main__container-numbers {
+  grid-column: 1 / 4;
+  grid-row: 3 / 4;
+  width: 100%;
+
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(2, 50%);
+
+  gap: 0.7rem;
 
   @include respond-to("medium") {
     grid-template-columns: repeat(3, 1fr);
   }
 
   &-card {
+    justify-self: center;
     background-color: $card-color;
     border: none;
     border-radius: 0.5rem;
-    height: 8rem;
-    width: 10rem;
+    height: 5rem;
+    width: 6.4rem;
+    @include respond-to("medium") {
+      height: 8rem;
+      width: 10rem;
+    }
 
     &-number {
       display: block;
       color: $secondary-color;
-      font-size: 4rem;
+      font-size: 2.5rem;
       font-weight: 900;
       text-align: center;
       margin: 0;
       margin-top: 0.5rem;
+
+      @include respond-to("medium") {
+        font-size: 4rem;
+      }
     }
 
     &-description {

@@ -17,17 +17,41 @@
 
 .main__container-button {
   @include primaryBtn;
-  width: 13.6rem;
+
+  grid-column: 1 / 4;
+  grid-row: 3 / 4;
+  width: 11.25rem;
+  height: 2.5rem;
+  margin: 1rem auto;
+
+  @include respond-to("medium") {
+    @include primaryBtn;
+    width: 13.6rem;
+    margin-left: 0;
+  }
 }
 
 .section__variants-button {
   @include primaryBtn;
-  width: 10rem;
-  margin: 2rem 0;
+  height: 2.5rem;
+  width: 8.35rem;
+  margin: 1rem 0;
+
+  @include respond-to("medium") {
+    @include primaryBtn;
+    width: 10rem;
+    margin: 2rem 0;
+  }
 }
 
-.main__container-form-button {
+.main__container_second-form-button {
   @include primaryBtn;
-  width: 13rem;
-  border-radius: 0 1.625rem 0 1.625rem;
+  border-radius: 0 0 2.75rem 2.75rem;
+  height: 2.75rem;
+  width: 100%;
+
+  @include respond-to("medium") {
+    width: 13rem;
+    border-radius: 0 1.625rem 0 1.625rem;
+  }
 }

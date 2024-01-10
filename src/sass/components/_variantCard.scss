@@ -4,37 +4,60 @@
   justify-content: center;
   position: relative;
   margin: auto;
-  margin-top: 30rem;
-  margin-bottom: 5rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+
+  @include respond-to("medium") {
+    margin-bottom: 5rem;
+  }
 
   &-h3 {
-    font-size: 3.2rem;
+    font-size: 1.95rem;
     font-weight: 900;
     margin: auto;
     line-height: 3.8rem;
     padding-bottom: 2rem;
+    text-align: center;
+
+    @include respond-to("medium") {
+      font-size: 3.2rem;
+    }
   }
 
   &-p {
-    line-height: 1.8rem;
-    width: 40%;
+    line-height: 1.67rem;
+
     text-align: center;
     margin: auto;
-    padding-bottom: 1rem;
+    padding: 1rem;
+    font-size: 0.9rem;
+
+    @include respond-to("medium") {
+      width: 40%;
+      font-size: 1rem;
+    }
   }
 
   &-container {
     display: flex;
     flex-direction: column;
+    // border: 1px solid black;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1.2rem 0 $shadow-color;
+    margin: 1rem;
 
     @include respond-to("medium") {
       flex-direction: row;
       align-items: baseline;
       padding: 1rem 0;
       margin: auto;
-      border-radius: 0.5rem;
-      box-shadow: 0 0 1.2rem 0 $shadow-color;
+      // border-radius: 0.5rem;
+      // box-shadow: 0 0 1.2rem 0 $shadow-color;
     }
+  }
+
+  &-img {
+    margin-top: 1rem;
   }
 
   &-card {
@@ -45,11 +68,16 @@
   }
 
   &-name {
-    font-size: 2.4rem;
+    font-size: 1.55rem;
     font-family: $title-font;
     font-weight: 700;
-    padding: 1rem 2rem;
+    padding: 0 2rem;
     margin: 0;
+
+    @include respond-to("medium") {
+      font-size: 2.4rem;
+      padding: 1rem 2rem;
+    }
   }
 
   &-line {
