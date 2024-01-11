@@ -82,6 +82,7 @@
       object-fit: contain;
       align-items: center;
       margin-top: 2rem;
+      transform: scaleY(-1);
 
       @include respond-to("medium") {
         height: 2rem;
@@ -94,7 +95,7 @@
     margin: auto;
     line-height: 4rem;
     font-size: 0.7rem;
-    text-align: center;
+    text-align: left;
 
     @include respond-to("medium") {
     }
